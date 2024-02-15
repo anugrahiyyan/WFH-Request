@@ -18,12 +18,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail->Host = 'smtp.gmail.com';  
     $mail->Port = 587;  // SMTP server port (usually 587 for TLS or 465 for SSL)
     $mail->SMTPAuth = true;
-    $mail->Username = 'khusushackingsaja@gmail.com';
-    $mail->Password = 'godmaster008%';
+    $mail->Username = '';
+    $mail->Password = '';
     $mail->SMTPSecure = 'tls';  
 
-    $mail->setFrom('khusushackingsaja@gmail.com', 'Iyyan');  // Sender email address and name
-    $mail->addAddress('gungdiah55@gmail.com', 'Gungdiah');  // Recipient email address and name
+    $mail->setFrom('', '');  // Sender email address and name
+    $mail->addAddress('@gmail.com', '');  // Recipient email address and name
 
 
     $mail->isHTML(true);  
