@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONEderland Enterprise</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>ONEderland Work From Home (WFH) Management</h1>
+    
+    <!-- Time-off request form -->
+    <form action="send-email.php" method="post">
+        <h2>Submit WFH Request</h2>
+        <label for="employeeId">Employee ID or Working Email ID :</label>
+        <input type="text" id="employeeId" name="employeeId" required>
+
+        <label for="department">Department:</label>
+        <select id="department" name="department" required>
+            <option value="" disabled selected>Select your department</option>
+            <option value="HR">ONE derland Enterprise HR</option>
+            <option value="FI">ONE derland Enterprise Finance</option>
+            <option value="OC">ONE derland Consulting</option>
+            <option value="SnG-1">SnG Operational</option>
+            <option value="SnG-2">SnG Digital Marketing</option>
+            <option value="E1">Education ONE</option>
+            <option value="EC">English cafe</option>
+            <option value="CE">Carbon Energy</option>
+            <option value="N1">Neurone Recruitment</option>
+            <!-- Add more options for departments as needed -->
+        </select>
+        
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" name="startDate" required>
+        
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" name="endDate" required>
+        
+        <label for="reason">Reason:</label>
+        <textarea id="reason" name="reason" rows="4" cols="50" required></textarea>
+        
+        <button type="submit">Submit Request</button>
+    </form>
+    
+    <!-- FullCalendar container -->
+    <div id="calendar"></div>
+    
+    <!-- Time-off requests list -->
+    <h2>Time-Off Requests</h2>
+    <ul id="requestList"></ul>
+    
+    <script></script>
+</body>
+</html>
